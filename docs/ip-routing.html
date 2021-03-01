@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">How the Internet Works</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Topics
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="domainnames.html">Domain Names and ICANN</a></li>
+                                <li><a class="dropdown-item" href="ip-routing.html">IP Addresses, Packets and Routing</a></li>
+                                <li><a class="dropdown-item" href="dns.html">DNS</a></li>
+                                <li><a class="dropdown-item" href="http.html">HTTP and HTTPS Protocols</a></li>
+                                <li><a class="dropdown-item" href="htmlcss.html">W3C, HTML and CSS</a></li>
+        
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a class="btn btn-outline-success" href="https://github.com/karthik892/cs601-howinternetworks">View on
+                            GitHub</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">IP Address</h5>
+                    <p class="card-text">An Internet Protocol address (IP address) is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. An IP address serves two main functions: host or network interface identification and location addressing.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h5>IP versions</h5>
+                    <p>Two versions of the Internet Protocol are in common use on the Internet today. The original version of the Internet Protocol that was first deployed in 1983 in the ARPANET, the predecessor of the Internet, is Internet Protocol version 4 (IPv4).</p>
+                    <p>The rapid exhaustion of IPv4 address space available for assignment to Internet service providers and end-user organizations by the early 1990s, prompted the Internet Engineering Task Force (IETF) to explore new technologies to expand the addressing capability on the Internet. The result was a redesign of the Internet Protocol which became eventually known as Internet Protocol Version 6 (IPv6) in 1995. IPv6 technology was in various testing stages until the mid-2000s when commercial production deployment commenced.</p>
+                    <p>Today, these two versions of the Internet Protocol are in simultaneous use. Among other technical changes, each version defines the format of addresses differently. Because of the historical prevalence of IPv4, the generic term IP address typically still refers to the addresses defined by IPv4. The gap in version sequence between IPv4 and IPv6 resulted from the assignment of version 5 to the experimental Internet Stream Protocol in 1979, which however was never referred to as IPv5.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h5>IPv4 Addresses</h5>
+                    <p>An IPv4 address has a size of 32 bits, which limits the address space to 4,294,967,296 (2<sup>32</sup>) addresses. Of this number, some addresses are reserved for special purposes such as private networks (~18 million addresses) and multicast addressing (~270 million addresses).</p>
+                    <p>IPv4 addresses are usually represented in dot-decimal notation, consisting of four decimal numbers, each ranging from 0 to 255, separated by dots, e.g., 172.16.254.1. Each part represents a group of 8 bits (an octet) of the address.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h5>IPv6 Addresses</h5>
+                    <p>In IPv6, the address size was increased from 32 bits in IPv4 to 128 bits, thus providing up to 2128 (approximately 3.403×1038) addresses. This is deemed sufficient for the foreseeable future.</p>
+                    <p>The intent of the new design was not to provide just a sufficient quantity of addresses, but also redesign routing in the Internet by allowing more efficient aggregation of subnetwork routing prefixes. </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Packet</h5>
+                    <p class="card-text">In telecommunications and computer networking, a network packet is a formatted unit of data carried by a packet-switched network. A packet consists of control information and user data; the latter is also known as the payload. Control information provides data for delivering the payload (e.g., source and destination network addresses, error detection codes, or sequencing information). Typically, control information is found in packet headers and trailers.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h5>Contents of a packet</h5>
+                    <p>A packet may contain any of the following components:</p>
+                    <ul>
+                        <li>Addresses - The routing of network packets requires two network addresses, the source address of the sending host, and the destination address of the receiving host.</li>
+                        <li>Error detection and correction - Error detection and correction is performed at various layers in the protocol stack. Network packets may contain a checksum, parity bits or cyclic redundancy checks to detect errors that occur during transmission. At the transmitter, the calculation is performed before the packet is sent. When received at the destination, the checksum is recalculated, and compared with the one in the packet. If discrepancies are found, the packet may be corrected or discarded. Any packet loss due to these discards is dealt with by the network protocol.</li>
+                        <li>Hop limit - Under fault conditions, packets can end up traversing a closed circuit. If nothing was done, eventually the number of packets circulating would build up until the network was congested to the point of failure. Time to live is a field that is decreased by one each time a packet goes through a network hop. If the field reaches zero, routing has failed, and the packet is discarded. Ethernet packets have no time-to-live field and so are subject to broadcast radiation in the presence of a switching loop.</li>
+                        <li>Length - There may be a field to identify the overall packet length. However, in some types of networks, the length is implied by the duration of the transmission.</li>
+                        <li>Priority - Some networks implement quality of service which can prioritize some types of packets above others. This field indicates which packet queue should be used; a high priority queue is emptied more quickly than lower priority queues at points in the network where congestion is occurring.</li>
+                        <li>Payload - In general, the payload is the data that is carried on behalf of an application. It is usually of variable length, up to a maximum that is set by the network protocol and sometimes the equipment on the route. When necessary, some networks can break a larger packet into smaller packets.</li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Routing</h5>
+                    <p class="card-text">Routing is the process of selecting a path for traffic in a network or between or across multiple networks. Broadly, routing is performed in many types of networks, including circuit-switched networks, such as the public switched telephone network (PSTN), and computer networks, such as the Internet.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>In packet switching networks, routing is the higher-level decision making that directs network packets from their source toward their destination through intermediate network nodes by specific packet forwarding mechanisms. Packet forwarding is the transit of network packets from one network interface to another. Intermediate nodes are typically network hardware devices such as routers, gateways, firewalls, or switches. General-purpose computers also forward packets and perform routing, although they have no specially optimized hardware for the task.</p>
+                    <p>The routing process usually directs forwarding on the basis of routing tables. Routing tables maintain a record of the routes to various network destinations. Routing tables may be specified by an administrator, learned by observing network traffic or built with the assistance of routing protocols.</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <h5>References</h5>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/IP_address">https://en.wikipedia.org/wiki/IP_address</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Network_packet">https://en.wikipedia.org/wiki/Network_packet</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Routing">https://en.wikipedia.org/wiki/Routing</a></li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+</body>
+</html>
