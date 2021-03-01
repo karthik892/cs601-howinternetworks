@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">How the Internet Works</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Topics
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="domainnames.html">Domain Names and ICANN</a></li>
+                                <li><a class="dropdown-item" href="ip-routing.html">IP Addresses, Packets and Routing</a></li>
+                                <li><a class="dropdown-item" href="dns.html">DNS</a></li>
+                                <li><a class="dropdown-item" href="http.html">HTTP and HTTPS Protocols</a></li>
+                                <li><a class="dropdown-item" href="htmlcss.html">W3C, HTML and CSS</a></li>
+        
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a class="btn btn-outline-success" href="https://github.com/karthik892/cs601-howinternetworks">View on
+                            GitHub</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Domain Name</h5>
+                    <p class="card-text">A <strong>Domain name</strong> is the address of a website that people type in the browser URL bar to visit a website. In simple terms, if a website was a house, then the domain name will be its address.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">ICANN</h5>
+                    <p class="card-text">The <strong>Internet Corporation for Assigned Names and Numbers</strong> (ICANN pronounced EYE-kan) is an American multistakeholder group and nonprofit organization responsible for coordinating the maintenance and procedures of several databases related to the namespaces and numerical spaces of the Internet, ensuring the network's stable and secure operation. ICANN performs the actual technical maintenance work of the Central Internet Address pools and DNS root zone registries</p>
+                </div>
+            </div>
+      
+            <div class="row">
+                <div class="col-12">
+                    <h5>Origin of Domain Names</h5>
+                    <p>Domain names first came to use in through the Domain Name System in 1983, with general public registration not being available until February 24, 1986. </p>
+                    <p>The practice of using a simple memorable abstraction of a host's numerical address on a computer network dates back to the ARPANET era, before the advent of today's commercial Internet. In the early network, each computer on the network retrieved the hosts file (host.txt) from a computer at SRI (now SRI International), which mapped computer hostnames to numerical addresses. The rapid growth of the network made it impossible to maintain a centrally organized hostname registry and in 1983 the Domain Name System was introduced on the ARPANET and published by the Internet Engineering Task Force as RFC 882 and RFC 883.</p>
+                    <p>Today, the Internet Corporation for Assigned Names and Numbers (ICANN) manages the top-level development and architecture of the Internet domain name space. It authorizes domain name registrars, through which domain names may be registered and reassigned.</p>
+                    <p>The domain name space consists of a tree of domain names. Each node in the tree holds information associated with the domain name. The tree sub-divides into zones beginning at the DNS root zone.</p>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <h5>Domain name syntax</h5>
+                    <p>A domain name consists of one or more parts, technically called labels, that are conventionally concatenated, and delimited by dots, such as example.com.</p>
+                    <ul>
+                        <li>The right-most label conveys the top-level domain; for example, the domain name www.example.com belongs to the top-level domain com.</li>
+                        <li>The hierarchy of domains descends from the right to the left label in the name; each label to the left specifies a subdivision, or subdomain of the domain to the right. For example: the label example specifies a node example.com as a subdomain of the com domain, and www is a label to create www.example.com, a subdomain of example.com. Each label may contain from 1 to 63 octets. The empty label is reserved for the root node and when fully qualified is expressed as the empty label terminated by a dot. The full domain name may not exceed a total length of 253 ASCII characters in its textual representation. Thus, when using a single character per label, the limit is 127 levels: 127 characters plus 126 dots have a total length of 253. In practice, some domain registries may have shorter limits.</li>
+                        <li>A hostname is a domain name that has at least one associated IP address. For example, the domain names www.example.com and example.com are also hostnames, whereas the com domain is not. However, other top-level domains, particularly country code top-level domains, may indeed have an IP address, and if so, they are also hostnames.</li>
+                        <li>Hostnames impose restrictions on the characters allowed in the corresponding domain name. A valid hostname is also a valid domain name, but a valid domain name may not necessarily be valid as a hostname.</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <figure style="float:right;width:300px">
+                        <img width="300px" src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Domain_name_space.svg" alt="Domain Name Space">
+                        <figcaption>The hierarchical domain name system, organized into zones, each served by domain name servers.</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h5>References</h5>
+                    <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/Domain_name">https://en.wikipedia.org/wiki/Domain_name</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/ICANN">https://en.wikipedia.org/wiki/ICANN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+</body>
+</html>
